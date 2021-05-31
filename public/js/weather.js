@@ -15,7 +15,7 @@ const checkweather = async (event) => {
   try {
     let data = await fetch(api);
     arrData = await data.json();
-    console.log(arrData);
+    // console.log(arrData);
     loca.innerHTML = `${arrData.name},${arrData.sys.country}`;
     temp.innerHTML = `Temperature:- ${arrData.main.temp}&deg;C`;
     tempmin.innerHTML = `min temp:- ${arrData.main.temp_min}&deg;C`;
