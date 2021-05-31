@@ -11,7 +11,7 @@ const wind = document.getElementById("wind");
 const checkweather = async (event) => {
   event.preventDefault();
   let city = cityname.value;
-  const api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=827788fcf1df41ec70e9c1d2faaf39cf`;
+  const api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=827788fcf1df41ec70e9c1d2faaf39cf`;
   try {
     let data = await fetch(api);
     arrData = await data.json();
