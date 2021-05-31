@@ -15,7 +15,7 @@ const checkweather = async (event) => {
   try {
     let data = await fetch(api);
     arrData = await data.json();
-    // console.log(arrData);
+    console.log(arrData);
     loca.innerHTML = `${arrData.name},${arrData.sys.country}`;
     temp.innerHTML = `Temperature:- ${arrData.main.temp}&deg;C`;
     tempmin.innerHTML = `min temp:- ${arrData.main.temp_min}&deg;C`;
@@ -34,9 +34,8 @@ const checkweather = async (event) => {
       weather.innerHTML =
         '  <i class="fas fa-cloud-rain" style="font-size: 55px; color: #dfe4ea"></i>';
     } else if (cloud == "Haze") {
-      weather,
-        (innerHTML =
-          '<i class="fas fa-smog" style="font-size: 55px; color: #dfe4ea"></i>');
+      weather.innerHTML =
+        '<i class="fas fa-smog" style="font-size: 55px; color: #dfe4ea"></i>';
     } else {
       weather.innerHTML =
         '  <i class="fas fa-cloud" style="font-size: 55px; color: #dfe4ea"></i>';
