@@ -1,0 +1,30 @@
+.myimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.col-hd {
+  margin-left: 8vw;
+}
+@media only screen and (max-width: 600px) {
+  .col-hd {
+    margin-left: 30vw;
+  }
+  .foor {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .mrg-right {
+    margin-left: 6vw;
+  }
+}
+.foot {
+  height: 20vh;
+}

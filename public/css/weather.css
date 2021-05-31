@@ -1,0 +1,69 @@
+.tempm {
+  display: flex;
+}
+.tempm div {
+  margin-right: 5vw;
+}
+.temp {
+  margin-left: 2vw;
+  font-size: 25px;
+}
+.condition {
+  font-size: 20px;
+}
+.output {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#wind {
+  font-size: 20px;
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.controler {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 40vw;
+  border-radius: 25px;
+  background-color: #00b2ee;
+}
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 80vw;
+  }
+  .controler {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputname {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .tempm {
+    margin-left: 5vw;
+  }
+}
+.inputname {
+  border-radius: 15px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #111;
+  background-color: #f8f8f8;
+}
+::placeholder {
+  text-align: center;
+  color: #111;
+}
